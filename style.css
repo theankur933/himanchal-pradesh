@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Arima+Madurai:wght@700&family=Balsamiq+Sans:wght@700&family=Comfortaa:wght@500&family=Corinthia:wght@400;700&family=Cormorant+Garamond&family=Courgette&family=Dosis:wght@500&family=Gentium+Book+Basic:ital@0;1&family=Karla:wght@300&family=Kaushan+Script&family=Merienda:wght@700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,600&family=Nanum+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Quicksand:wght@500&family=Roboto:ital@1&family=Spartan&family=Varela+Round&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+/*  home section */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('https://i.postimg.cc/MpVvCrDd/p05ccrb2.png');
+    background-size: cover;
+    background-position: center;
+    padding-right: 6%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 70px;
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+#navbar {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 400px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 55px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Gill Sans", sans-serif;
+    transform: scale(1.09);
+}
+
+.row {
+    display: flex;
+    height: 115%;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.col {
+    flex-basis: 65%;
+}
+
+.col1 {
+    flex-basis: 70%;
+}
+
+.hp {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-size: 80px;
+    font-family: Merienda;
+}
+
+p {
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.headpart-button {
+    padding: 12px 33px;
+    display: inline-block;
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    font-family: Times;
+    letter-spacing: .1rem;
+    border: 3px solid black;
+}
+
+.headpart-button:hover {
+    transform: scale(1.09);
+    background-color: black;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+}
+
+.box {
+    width: 250px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 13px 22px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 12px 20px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.box:hover {
+    transform: scale(1.09);
+}
+
+.col1 h5 {
+    font-family: serif;
+    font-size: 20px;
+    color: black;
+}
+
+.col1 p {
+    font-family: "Gill Sans", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.box1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url('https://i.postimg.cc/fLcDRTDP/pic-1.png');
+}
+
+.box2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url('https://i.postimg.cc/vZXdjSXJ/spiti.png');
+}
+
+.box3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('https://i.postimg.cc/nhFyvGZ0/Kasauli.png');
+}
+
+.box4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://i.postimg.cc/BnByhY4d/Kinnaur-Himachal-39.png');
+}
+
+.box:hover {
+    transform: translateY(- 10px);
+}
+
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+
+
+
+
+
+/*   about section   */
+
+.about {
+    width: 100%;
+    min-height: 50vh;
+    flex-direction: column;
+    background: silver;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.about-info {
+    text-align: center;
+    float: left;
+}
+
+.about-info-heading {
+    font-size: 2rem;
+    color: black;
+    line-height: 40px;
+}
+
+.about-info-desc {
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin-top: 10px;
+    color: black;
+
+}
+
+.about-info-button {
+    padding: 18px 35px;
+    display: inline-block;
+    background-color: #808B96;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    font-family: Times;
+    letter-spacing: .1rem;
+    border: 2px solid #212F3D;
+}
+
+.about-info-button:hover {
+    transform: scale(1.09);
+    background-color: #EDBB99;
+    border: 2px solid #A04000;
+    color: black;
+}
+
+.about-img {
+    display: inline-block;
+    float: right;
+}
+
+.about-img-wrapper {
+    height: 280px;
+    max-width: 470px;
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 9rem;
+    box-shadow: 20px 20px 8px darkgray;
+    transition: transform .1s;
+    cursor: pointer;
+}
+
+.about-img-wrapper:hover {
+    transform: scale(1.12);
+}
+
+.about-img-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .about {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    .about-info {
+        width: 500px;
+        text-align: left;
+
+    }
+}
+
+
+
+
+
+
+/*  gallery  */
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url('https://i.postimg.cc/gJSzYpD1/8-82951-dark-blue-background-hd.jpg');
+}
+
+.boxs {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.boxs span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) *45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.boxs span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boxs span img:hover {
+    transform: scale(1.10);
+}
+
+
+
+
+
+
+/*      review section    */
+
+.reviews {
+    background: #F0E68C;
+    min-height: 100vh;
+    color: #434343;
+    text-align: center;
+    background-size: cover;
+}
+
+.headiing {
+    font-size: 4rem;
+    font-family: Gabriola;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    color: black;
+}
+
+.in {
+    max-width: 1230px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border {
+    width: 250px;
+    height: 4px;
+    background: red;
+    margin: 18px auto;
+}
+
+.row123 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col123 {
+    flex: 40%;
+    max-width: 25%;
+    box-sizing: border-box;
+    padding: 3px 15px;
+}
+
+.review {
+    padding: 20px;
+    background: #FEF9E7;
+    transition: transform .1s;
+    cursor: pointer;
+}
+
+.review:hover {
+    transform: scale(1.15);
+}
+
+.review img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 22px;
+    margin: 20px 0;
+    color: #641E16;
+    font-family: Verdana;
+}
+
+.stars {
+    color: #6ab04c;
+    margin-bottom: 20px;
+}
+
+.para-review {
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    line-height: 27px;
+    font-family: cambria;
+}
+
+@media screen and (max-width:960px) {
+    .col {
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+/*  contact section   */
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Arima+Madurai:wght@700&family=Balsamiq+Sans:wght@700&family=Comfortaa:wght@500&family=Corinthia:wght@400;700&family=Cormorant+Garamond&family=Courgette&family=Dosis:wght@500&family=Gentium+Book+Basic:ital@0;1&family=Karla:wght@300&family=Kaushan+Script&family=Merienda:wght@700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,600&family=Nanum+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Quicksand:wght@500&family=Roboto:ital@1&family=Spartan&family=Varela+Round&display=swap');
+
+.body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url('https://i.postimg.cc/1XHtwQGS/96462.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page {
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-page h2 {
+    width: 100%;
+    padding: 24px;
+    color: black;
+    font-size: 4.5rem;
+    font-family: Gabriola;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.contact-page .h22 {
+    color: black;
+    font-size: 30px;
+    font-family: Gabriola;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.contact-info {
+    padding-left: 8%;
+    font-size: 20px;
+}
+
+.textitem {
+    font-family: 'Nanum Gothic';
+    font-size: 25px;
+    color: black;
+    line-height: 70px;
+}
+
+.contact-form .itemm {
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #322;
+    font-family: 'Montserrat';
+}
+
+.contact-form .itemm .icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #3494db;
+    text-align: center;
+    color: darkred;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 2px solid #C0C0C0;
+    padding: 30px 30px 30px 30px;
+    margin-right: 40px;
+    border-radius: 20px;
+    /*background-color: #f0e68c;*/
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('https://i.postimg.cc/zDF1fRKY/best-top-desktop-hd-wall-wallpaper-walls-wallpapers-grey-stone-brick-wall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textb {
+    width: calc(45% - 10px);
+    height: 30px;
+    padding: 12px;
+    background-color: #222;
+    border: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    width: 100%;
+    min-height: 145px;
+    max-height: 250px;
+    resize: vertical;
+    padding: 12px;
+    background-color: #222;
+    border: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+form .btnn {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300px;
+    margin-left: auto;
+    background-color: #008080;
+    border-radius: 30px;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 3px solid #000080;
+    transition: .3s linear;
+}
+
+form .btnn:hover {
+    background-color: #adff2f;
+    color: black;
+    border: 3px solid #008000;
+    transform: scale(1.15);
+}
+
+@media screen and (max-width: 980px) {
+    .contact-page {
+        max-width: 700px;
+    }
+
+    .contact-page h2 {
+        font-size: 38px;
+    }
+
+    .contact-info,
+    .contact-form {
+        flex: 100%;
+        margin-bottom: 30px;
+    }
+
+    .textb {
+        width: 100%;
+    }
+}
